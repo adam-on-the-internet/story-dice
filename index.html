@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+ 
+<html> 
+
+<head>
+    <title>Story Dice</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../style/home.css">
+</head> 
+
+<body>
+<div class="jumbotron">
+    <div class="container">
+        <h1>Story Dice</h1>
+        <p>Roll the dice to reveal images to give you ideas for story plots, themes, characters, or more! This can be used to help brainstorming for stories, role-playing games, and more! Free images created with <a href="https://www.syncfusion.com/downloads/metrostudio?">Metro Studio</a>!</p>
+    </div>
+</div>
+
+<div class="container" id="content">
+    <div class="container p-2">
+        <button class="btn btn-primary" onclick="roll_dice(1)" type="submit">Roll 1 Die</button>
+        <button class="btn btn-primary" onclick="roll_dice(2)" type="submit">Roll 2 Dice</button>
+        <button class="btn btn-primary" onclick="roll_dice(3)" type="submit">Roll 3 Dice</button>
+    </div>
+    <div class="card-deck mt-4">
+        <div class="row justify-content-center" id="current_inventory">
+            <div class="card col-auto">
+                <img class="img p-2" id="one" src="img/dice.png" alt="zombie" width="120" height="120"><br>
+            </div>
+            <div class="card col-auto">
+                <img class="img p-2" id="two" src="img/dice.png" alt="zombie" width="120" height="120"><br>
+            </div>
+            <div class="card col-auto">
+                <img class="img p-2" id="three" src="img/dice.png" alt="zombie" width="120" height="120">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="../../script/callanan.js"></script>
+<script src="roll.js"></script>
+</body>
+</html>
